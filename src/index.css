@@ -1,0 +1,89 @@
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root {
+  --primary: #f42c37;
+  --secondary: #f42c37;
+  --brandYellow: #fdc62e;
+  --brandGreen: #2dcc6f;
+  --brandBlue: #2d9cff;
+  --brandWhite: #eeeeee;
+  --brandMoon: #fdc62e;
+  --brandIcon: #333333;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  background: var(--brandWhite);
+
+}
+
+.dark {
+  --primary: #f42c37;
+  --secondary: #f42c37;
+  --brandYellow: #eeeeee;
+  --brandGreen: #2dcc6f;
+  --brandBlue: #2d9cff;
+  --brandWhite: #0d1117;
+  --brandText: #eeeeee;
+  --brandIcon: #eeeeee;
+  --brandMoon: #433a3a;
+}
+
+
+
+a:hover {
+  color: var(--primary);
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--brandWhite);
+  border: none;
+}
+
+button:hover {
+  background-color: var(--brandYellow);
+  color: var(--brandWhite);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+body {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.bee{
+  width: 300px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: var(--brandWhite);
+  transition: ease-in;
+  color: var(--brandText);
+}
+
+.bee:focus {
+  width: 350px;
+  transition: width  ease-in-out;
+  outline: none;
+  border-color: var(--brandText);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.animate {
+  animation: bounce 0.5s ease-in-out infinite;
+}

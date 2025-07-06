@@ -26,7 +26,7 @@ body {
 .dark {
   --primary: #f42c37;
   --secondary: #f42c37;
-  --brandYellow: #eeeeee;
+  --brandYellow: #fdc62e;
   --brandGreen: #2dcc6f;
   --brandBlue: #2d9cff;
   --brandWhite: #0d1117;
@@ -38,7 +38,7 @@ body {
 
 
 a:hover {
-  color: var(--primary);
+  color: var(--brandYellow);
 }
 
 button {

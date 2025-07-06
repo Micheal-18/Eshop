@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className='flex justify-center items-center border-1px border-primary'>
         <div className='flex justify-between items-center w-full max-w-7xl py-4'>
           <div className=' flex  text-[var(--brandIcon)] dark:text-[var(--brandIcon)]  cursor-pointer  space-x-10 '>
-            <a className=' text-[var(--primary)] text-2xl' href="/">ESHOP</a>
+            <a className=' text-[var(--brandYellow)] dark-text-[var(--brandYellow)] text-2xl font-semibold' href="/">711-Tohon</a>
             <div className='hidden md:flex lg:flex  text-[var(--brandIcon)] dark:text-[var(--brandIcon)]  cursor-pointer  space-x-10 '>
               <a href="/" >Home</a>
               <a href="/shop" >Shop</a>

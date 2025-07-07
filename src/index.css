@@ -58,19 +58,18 @@ body {
 }
 
 .bee{
-  width: 300px;
+  width: 0;
   height: 40px;
   padding: 0 10px;
   border-radius: 20px;
   border: 1px solid #ccc;
   background-color: var(--brandWhite);
-  transition: ease-in;
   color: var(--brandText);
 }
-
-.bee:focus {
-  width: 350px;
-  transition: width  ease-in-out;
+.bee:focus,
+.bee:hover{
+  width: 400px;
+  transition: width 0.3s ease-in-out;
   outline: none;
   border-color: var(--brandText);
 }

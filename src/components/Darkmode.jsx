@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { Link } from 'react-router-dom'
@@ -8,9 +8,16 @@ const Darkmode = () => {
     const [darkMode, setDarkMode] = useState(false);
 
     const toggleDarkMode = () => {
+        localStorage.setItem('darkMode', !darkMode);
         setDarkMode(!darkMode);
         document.documentElement.classList.toggle('dark', !darkMode);
     }
+
+    useEffect(() => {
+        const storedDarkMode = localStorage.getItem('darkMode') === 'true';
+        setDarkMode(storedDarkMode);
+        document.documentElement.classList.toggle('dark', storedDarkMode);
+    }, []);
 
   return (
     <div className='flex justify-center items-center p-2' onClick={toggleDarkMode}>

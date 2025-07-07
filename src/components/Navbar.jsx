@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaAngleDown } from 'react-icons/fa'
+import { FaCaretDown } from 'react-icons/fa'
 import { FiSearch } from 'react-icons/fi'
 import { FaCartShopping } from 'react-icons/fa6'
 import Darkmode from './Darkmode'
@@ -28,7 +28,7 @@ const Navbar = () => {
               <a href="/shop" >Shop</a>
               <a href="/about" >About</a>
               <a href="/blog" >Blog</a>
-              <a href='' className=' flex items-center justify-center'>Quick Link< FaAngleDown className='ml-2 animate' /></a>
+              <a href='' className=' flex items-center justify-center'>Quick Link< FaCaretDown className='ml-2 animate' /></a>
             </div>
           </div>
 

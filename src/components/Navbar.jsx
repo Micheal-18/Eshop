@@ -28,7 +28,19 @@ const Navbar = () => {
               <a href="/shop" >Shop</a>
               <a href="/about" >About</a>
               <a href="/blog" >Blog</a>
-              <a href='' className=' flex items-center justify-center'>Quick Link< FaCaretDown className='ml-2 animate' /></a>
+              <li className=' list-none cursor-pointer outline-none  group'>
+                <a href='' className=' flex items-center justify-center'>Quick Link< FaCaretDown className='ml-2 animate' /></a>
+
+                <div className='absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 text-black'>
+                  <ul className='space-y-2'>
+                    <li className='flex flex-col space-y-2 text-gray-500 hover:text-black dark:hover:text-white duration-200 w-full'>
+                      <a href=''>Trending Fits</a>
+                      <a href=''>Latest Fits</a>
+                      <a href=''>Top Rated</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </div>
           </div>
 

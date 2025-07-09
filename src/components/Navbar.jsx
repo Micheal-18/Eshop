@@ -18,11 +18,11 @@ const Navbar = () => {
   }
 
   return (
-    <section className='w-full bg-[var] fixed top-0 mx-auto px-4'>
-      <div className='flex justify-center items-center border-1px border-primary'>
-        <div className='flex justify-between items-center w-full max-w-7xl py-4'>
+    <section className='w-full bg-[var] relative h-5 z-50 mx-auto px-4'>
+      <div className='fixed w-full top-0  border-1px border-primary'>
+        <div className='flex justify-between items-center w-full py-4'>
           <div className=' flex  text-[var(--brandIcon)] dark:text-[var(--brandIcon)]  cursor-pointer  space-x-10 '>
-            <a className=' text-[var(--brandYellow)] dark-text-[var(--brandYellow)] text-2xl font-semibold' href="/">711-Tohon</a>
+            <a className=' text-[var(--primary)] dark-text-[var(--primary)] text-2xl font-semibold' href="/">ESHOP</a>
             <div className='hidden md:flex lg:flex  text-[var(--brandIcon)] dark:text-[var(--brandIcon)]  cursor-pointer  space-x-10 '>
               <a href="/" >Home</a>
               <a href="/shop" >Shop</a>
@@ -31,9 +31,9 @@ const Navbar = () => {
               <li className=' list-none cursor-pointer outline-none  group'>
                 <a href='' className=' flex items-center justify-center'>Quick Link< FaCaretDown className='ml-2 animate' /></a>
 
-                <div className='absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 text-black'>
+                <div className='fixed z-50 hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 transition ease-in-out p-2 text-black'>
                   <ul className='space-y-2'>
-                    <li className='flex flex-col space-y-2 text-gray-500 hover:text-black dark:hover:text-white duration-200 w-full'>
+                    <li className='flex flex-col space-y-2 text-gray-500 hover:text-black dark:hover:text-white duration-700 w-full'>
                       <a href=''>Trending Fits</a>
                       <a href=''>Latest Fits</a>
                       <a href=''>Top Rated</a>
@@ -50,10 +50,9 @@ const Navbar = () => {
             </div>
             <div className='relative'>
               < FaCartShopping className='text-[var(--brandIcon)] dark:text-[var(--brandIcon)]  cursor-pointer transition ease-in-out duration-300 hover:bg-[var(--brandWhite)] dark:hover:bg-[var(--brandBlack)]' onClick={handleCartClick} />
-
-              {showCart && (<div className='absolute top-16 right-4 bg-white dark:bg-gray-800 shadow-lg rounded-lg p-4 w-64'>
+              {showCart && (<div className='fixed top-16 right-4 z-50  bg-white dark:bg-gray-800 shadow-lg rounded-lg p-4 scale:120  w-64'>
                 <h2 className='text-lg font-semibold text-left text-[var(--primary)] mb-2'>Order Now</h2>
-                <form className='flex flex-col space-y-2'>
+                <form className='flex z-50  flex-col space-y-2'>
                   <input type="text" placeholder='Name' className='p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]' />
                   <input type="email" placeholder='Email' className='p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]' />
                   <input type="text" placeholder='Address' className='p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]' />

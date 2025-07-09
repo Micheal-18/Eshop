@@ -41,10 +41,12 @@ a:hover {
   color: var(--primary);
 }
 
+
 button {
   background-color: var(--primary);
   color: var(--brandWhite);
   border: none;
+
 }
 
 button:hover {

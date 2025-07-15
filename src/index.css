@@ -46,13 +46,14 @@ button {
   background-color: var(--primary);
   color: var(--brandWhite);
   border: none;
-
+  cursor: pointer;
 }
 
 button:hover {
   background-color: var(--brandYellow);
   color: var(--brandWhite);
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 body {
@@ -65,7 +66,7 @@ body {
   padding: 0 10px;
   border-radius: 20px;
   border: 1px solid #ccc;
-  background-color: var(--brandWhite);
+  background-color: transparent;
   color: var(--brandText);
 }
 .bee:focus,

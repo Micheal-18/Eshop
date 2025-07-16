@@ -9,6 +9,9 @@ import img6 from "../assets/p5.png"
 import img7 from "../assets/earpi.png"
 import img8 from "../assets/waka.png"
 import img9 from "../assets/phone.png"
+import { FaCarSide } from 'react-icons/fa';
+import { FiCheckCircle } from 'react-icons/fi';
+import { FaHeadphones, FaWallet } from 'react-icons/fa6';
 
 
 const Home = () => {
@@ -53,7 +56,7 @@ const Home = () => {
     return (
         <>
             <section className='w-full relative flex flex-cols justify-center items-center'>
-                <div className='w-[90%] h-[85vh] mt-12 bg-gray-300 dark:bg-gray-300  shadow-lg rounded-3xl'>
+                <div className='w-[95%] h-[85vh] mt-16 bg-gradient-to-br from-gray-200 to-gray-300  dark:bg-gradient-to-br from-gray-200 to-gray-400   shadow-lg rounded-3xl'>
                     <Slider {...settings} className='w-full h-full rounded-4xl'>
                         {
                             HeroData.map((item) => (
@@ -77,7 +80,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='w-full my-5 relative flex justify-center items-center'>
+            <section className='w-full my-5 relative mt-8 flex justify-center items-center'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-10 gap-8  overflow-hidden'>
                     <div className='flex items-end relative px-4 h-[300px] shrink-0 bg-gradient-to-br from-gray-200 to-gray-300   rounded-3xl'>
                         <div className='mb-4'>
@@ -85,7 +88,7 @@ const Home = () => {
                                 <h3 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-lg font-semibold'>Enjoy</h3>
                                 <h1 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-2xl
                                        sm:text-3xl opacity-80 font-bold'>With</h1>
-                                <h1 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-[30px] md:text-[60px] opacity-20 font-bold'>Earphone</h1>
+                                <h1 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-[30px] md:text-[60px] opacity-50 font-bold'>Earphone</h1>
                                 <span className='bg-[var(--primary)] dark:bg-[var(--brandWhite)] text-[var(--brandIcon)] dark:text-[var(--brandYellow)] px-2 cursor-pointer md:px-6 py-2 rounded-full sm:ml-4 hover:bg-[var(--brandWhite)] dark:hover:bg-[var(--brandBlack)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Browser</span>
                             </div>
                             
@@ -166,6 +169,61 @@ const Home = () => {
                             
                                 <img src={img5} alt='secpic' className='w-[200px] absolute bottom-0 right-0 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]' />
                             
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="w-full h-20vh mx-8 md:mx-10 my-14 md:my-20 flex justify-center items-center overflow-hidden">
+                <div className="flex flex-1 gap-2 items-center flex-row">
+                    <FaCarSide className='text-2xl text-[var(--primary)]'/>
+                    <div>
+                        <h1 className="text-[var(--brandIcon)] dark:text-[var(--brandWhite)] text-sm md:text-2xl font-semibold">Shop By Cartegory</h1>
+                        <p className="text-[var(--brandIcon)] dark:text-[var(--brandWhite)] text-xs md:text-lg opacity-90 ">Free Shiping on all order</p>
+                    </div>
+                </div>
+                <div className="flex flex-1 gap-2 items-center flex-row">
+                    <FiCheckCircle className='text-2xl text-[var(--primary)]'/>
+                    <div>
+                        <h1 className="text-[var(--brandIcon)] dark:text-[var(--brandWhite)] text-sm md:text-2xl font-semibold">Shop By Cartegory</h1>
+                        <p className="text-[var(--brandIcon)] dark:text-[var(--brandWhite)] text-xs md:text-lg opacity-90 ">Free Shiping on all order</p>
+                    </div>
+                </div>
+                <div className="flex flex-1 gap-2 items-center flex-row">
+                    <FaHeadphones className='text-2xl text-[var(--primary)]'/>
+                    <div>
+                        <h1 className="text-[var(--brandIcon)] dark:text-[var(--brandWhite)] text-sm md:text-2xl font-semibold">Shop By Cartegory</h1>
+                        <p className="text-[var(--brandIcon)] dark:text-[var(--brandWhite)] text-xs md:text-lg opacity-90 ">Free Shiping on all order</p>
+                    </div>
+                </div>
+                <div className="flex flex-1 gap-2 items-center flex-row">
+                    <FaWallet className='text-2xl text-[var(--primary)]'/>
+                    <div>
+                        <h1 className="text-[var(--brandIcon)] dark:text-[var(--brandWhite)] text-sm md:text-2xl font-semibold">Shop By Cartegory</h1>
+                        <p className="text-[var(--brandIcon)] dark:text-[var(--brandWhite)] text-xs md:text-lg opacity-90 ">Free Shiping on all order</p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="w-full relative flex justify-center items-center">
+                <div className=" h-[60vh] bg-gradient-to-br from-gray-200 to-gray-300  dark:bg-gradient-to-br from-gray-200 to-gray-400   shadow-lg rounded-3xl">
+                    <div className='grid grid-cols-1 md:grid-cols-3 overflow-hidden'>
+                        <div className='flex flex-col justify-center items-start p-8 sm:p-8 '>
+                            <h3 className='text-[var(--brandBlack)] dark:text-[var(--brandWhite)] text-2xl font-semibold'>Latest</h3>
+                            <h1 className='text-[var(--brandBlack)] dark:text-[var(--brandWhite)] text-3xl
+                                       sm:text-7xl max-w-full opacity-80 font-bold'>Trending</h1>
+                            <h1 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-lg md:text-[150px] font-bold'>Products</h1>
+                            <button className='bg-[var(--brandBlack)] dark:bg-[var(--brandWhite)] text-[var(--brandWhite)] dark:text-[var(--brandBlack)] px-6 py-2 rounded-full sm:ml-4 hover:bg-[var(--brandWhite)] dark:hover:bg-[var(--brandBlack)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Shop By Cartegory</button>
+                        </div>
+                        <div className='flex justify-center items-center'>
+                            <img src={img2} alt="hero" className='w-[200px] mr-8 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]  ' />
+                        </div>
+                        <div className='flex flex-col justify-center items-start p-8 sm:p-8 '> 
+                            <h3 className='text-[var(--brandBlack)] dark:text-[var(--brandWhite)] text-lg '>Latest</h3>
+                            <h1 className='text-[var(--brandBlack)] dark:text-[var(--brandWhite)] text-lg md:text-2xl
+                                       sm:text-3xl max-w-full opacity-80 font-bold'>Trending</h1>
+                            <h1 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-lg md:text-2xl font-bold'>Products</h1>
+                            <button className='bg-[var(--brandBlack)] dark:bg-[var(--brandWhite)] text-[var(--brandWhite)] dark:text-[var(--brandBlack)] px-6 py-2 rounded-full sm:ml-4 hover:bg-[var(--brandWhite)] dark:hover:bg-[var(--brandBlack)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Shop By Cartegory</button>
                         </div>
                     </div>
                 </div>

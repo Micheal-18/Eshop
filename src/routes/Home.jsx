@@ -12,9 +12,69 @@ import img9 from "../assets/phone.png"
 import { FaCarSide } from 'react-icons/fa';
 import { FiCheckCircle } from 'react-icons/fi';
 import { FaHeadphones, FaWallet } from 'react-icons/fa6';
+import { ImGooglePlus3 } from 'react-icons/im';
 
 
 const Home = () => {
+
+    const data = [
+        {
+            No: 1,
+            title: "Headphone",
+            image: img1,
+            description: "Beat Headphone",
+            price: "$99.99"
+        },
+        {
+            No: 2,
+            title: "Smartphone",
+            image: img2,
+            description: "Latest Smartphone",
+            price: "$699.99"
+        },
+        {
+            No: 3,
+            title: "Smartwatch",
+            image: img3,
+            description: "Smartwatch",
+            price: "$199.99"
+        },
+        {
+            No: 4,
+            title: "console",
+            image: img4,
+            description: "Gaming Console",
+            price: "$99.99"
+        },
+        {
+            No: 5,
+            title: "Laptop",
+            image: img5,
+            description: "Gaming Laptop",
+            price: "$999.99"
+        },
+        {
+            No: 6,
+            title: "Speaker",
+            image: img6,
+            description: "Bluetooth Speaker",
+            price: "$49.99"
+        },
+        {
+            No: 7,
+            title: "Camera",
+            image: img7,
+            description: "Digital Camera",
+            price: "$499.99"
+        },
+        {
+            No: 8,
+            title: "Tablet",
+            image: img8,
+            description: "Latest Tablet",
+            price: "$299.99"
+        }
+    ]
 
     const HeroData = [
         {
@@ -89,7 +149,7 @@ const Home = () => {
                                 <h1 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-2xl
                                        sm:text-3xl opacity-80 font-bold'>With</h1>
                                 <h1 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-[30px] md:text-[60px] opacity-50 font-bold'>Earphone</h1>
-                                <span className='bg-[var(--primary)] dark:bg-[var(--brandWhite)] text-[var(--brandIcon)] dark:text-[var(--brandYellow)] px-2 cursor-pointer md:px-6 py-2 rounded-full sm:ml-4 hover:bg-[var(--brandWhite)] dark:hover:bg-[var(--brandBlack)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Browser</span>
+                                <button className='bg-[var(--brandWhite)] dark:bg-[var(--brandWhite)] text-[var(--brandIcon)] dark:text-[var(--brandBlack)] px-2 md:px-6 cursor-pointer py-2 rounded-full sm:ml-4 hover:bg-[var(--brandYellow)] dark:hover:bg-[var(--brandBlack)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Browser</button>
                             </div>
                             
                                 <img src={img7} alt='secpic' className='w-[200px]  absolute lg:-right-4 left-5 top-10 lg:top-[40px]  object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]' />
@@ -109,7 +169,7 @@ const Home = () => {
                         </div>
                         <img src={img9} alt="secpic" className="w-[200px] absolute -right-4 lg:top-[40px] sm:scale-100 lg:scale-110 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]" />
                     </div>
-                    <div className='flex items-end col-span-2 relative py-10 pl-5  h-[300px] bg-gradient-to-br from-red-500 to-red-500/90   rounded-3xl'>
+                    <div className='flex items-end col-span-2 relative py-10 pl-5  h-[300px] bg-gradient-to-br from-red-600 to-red-600/90   rounded-3xl'>
                         <div className='mb-4'>
                             <div className=''>
                                 <h3 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-lg font-semibold'>Enjoy</h3>
@@ -174,7 +234,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="w-full h-20vh mx-8 md:mx-10 my-14 md:my-20 flex justify-center items-center overflow-hidden">
+            <section className="grid grid-cols-2 gap-4 lg:grid-cols-4 m-10  overflow-hidden">
                 <div className="flex flex-1 gap-2 items-center flex-row">
                     <FaCarSide className='text-2xl text-[var(--primary)]'/>
                     <div>
@@ -205,27 +265,47 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="w-full relative flex justify-center items-center">
-                <div className=" h-[60vh] bg-gradient-to-br from-gray-200 to-gray-300  dark:bg-gradient-to-br from-gray-200 to-gray-400   shadow-lg rounded-3xl">
-                    <div className='grid grid-cols-1 md:grid-cols-3 overflow-hidden'>
-                        <div className='flex flex-col justify-center items-start p-8 sm:p-8 '>
-                            <h3 className='text-[var(--brandBlack)] dark:text-[var(--brandWhite)] text-2xl font-semibold'>Latest</h3>
-                            <h1 className='text-[var(--brandBlack)] dark:text-[var(--brandWhite)] text-3xl
-                                       sm:text-7xl max-w-full opacity-80 font-bold'>Trending</h1>
-                            <h1 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-lg md:text-[150px] font-bold'>Products</h1>
-                            <button className='bg-[var(--brandBlack)] dark:bg-[var(--brandWhite)] text-[var(--brandWhite)] dark:text-[var(--brandBlack)] px-6 py-2 rounded-full sm:ml-4 hover:bg-[var(--brandWhite)] dark:hover:bg-[var(--brandBlack)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Shop By Cartegory</button>
+            <section className="min-h-[500px] relative flex justify-center items-center px-2 py-12">
+                <div className=" bg-gradient-to-br from-red-500 to-red-700  dark:bg-gradient-to-br from-red-700 to-red-500  shadow-lg rounded-3xl">
+                    <div className='grid grid-cols-1 sm:grid-cols-3 gap-6 items-center text-[var(--brandWhite)] dark:text-[var(--brandWhite)] overflow-hidden'>
+                        <div className='  p-6 sm:p-8 '>
+                            <p className=' text-sm '>30% OFF</p>
+                            <h1 className=' uppercase  text-4xl
+                                       lg:text-7xl  font-bold'>Fine Smile</h1>
+                            <p className='text-sm'>10 Jan to 28 Jan</p>
                         </div>
-                        <div className='flex justify-center items-center'>
-                            <img src={img2} alt="hero" className='w-[200px] mr-8 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]  ' />
+                        <div className=' h-full flex items-center'>
+                            <img src={img1} alt="hero" className='w-[250px]  md:w-[340px] mx-auto object-cover drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] scale-125 ' />
                         </div>
-                        <div className='flex flex-col justify-center items-start p-8 sm:p-8 '> 
-                            <h3 className='text-[var(--brandBlack)] dark:text-[var(--brandWhite)] text-lg '>Latest</h3>
-                            <h1 className='text-[var(--brandBlack)] dark:text-[var(--brandWhite)] text-lg md:text-2xl
-                                       sm:text-3xl max-w-full opacity-80 font-bold'>Trending</h1>
-                            <h1 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-lg md:text-2xl font-bold'>Products</h1>
-                            <button className='bg-[var(--brandBlack)] dark:bg-[var(--brandWhite)] text-[var(--brandWhite)] dark:text-[var(--brandBlack)] px-6 py-2 rounded-full sm:ml-4 hover:bg-[var(--brandWhite)] dark:hover:bg-[var(--brandBlack)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Shop By Cartegory</button>
+                        <div className='flex flex-col justify-center gap-4 p-8 sm:p-8 '> 
+                            <p className=' text-lg font-bold'>Air Solo Bass</p>
+                            <p className='text-3xl md:text-5xl
+                                       sm:text-3xl font-bold'>Winter Sale</p>
+                            <p className=' text-sm tracking-wide leading-5 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <span className='bg-[var(--brandWhite)] text-center dark:bg-[var(--brandWhite)] text-[var(--brandIcon)] dark:text-[var(--brandBlack)] py-2 rounded-full hover:bg-[var(--primary)] dark:hover:bg-[var(--brandIcon)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Shop Now</span>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section className=" my-5 text-[var(--brandIcon)]   px-4 sm:px-16 lg:px-20  ">
+                <div className='flex flex-col  justify-center items-center mb-4'>
+                    <h1 className='font-bold text-2xl'>Best Seller Product</h1>
+                    <p className='text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div className='grid grid-cols-2  md:mx-20 my-8 lg:grid-cols-4 gap-10'>
+                    {data.map((data) => (
+                    <div key={data.No} className='flex flex-col'>
+                        <div className='w-40 h-45 bg-gray-200 '>
+                            <img src={data.image} alt='data' className='object-contain'/>
+                        </div>
+                        <div className='flex flex-col'>
+                            <h1 className='font-semibold text-lg'>{data.description}</h1>
+                            <p className='font-semibold text-sm'>{data.price}</p>
+                        </div>
+                    </div>
+                    
+                 ))}
                 </div>
             </section>
         </>

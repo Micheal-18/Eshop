@@ -190,8 +190,8 @@ const Home = () => {
             <section className='w-full my-5 relative flex justify-center items-center '>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-2 sm:mx-10 gap-4 sm:gap-8 overflow-hidden'>
                     <div className='flex col-span-2 items-end relative py-10 pl-5  h-[300px] bg-gradient-to-br from-gray-200 to-gray-400  shrink rounded-3xl'>
-                        <div className=''>
-                            <div className='mb-4'>
+                        <div className='mb-4'>
+                            <div className=''>
                                 <h3 className='text-[var(--brandIcon)] text-lg font-semibold'>Enjoy</h3>
                                 <h1 className='text-[var(--brandIcon)] dark:text-[var(--brandWhite)] text-2xl
                                        sm:text-3xl opacity-80 font-bold'>With</h1>
@@ -204,7 +204,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='flex items-start relative px-4  md:h-[300px] bg-gradient-to-br from-green-400 to-green-400/90  rounded-3xl'>
-                        <div className='mb-4 pr-10 sm:pr-0 my-4'>
+                        <div className='mb-4 pr-20 sm:pr-0 my-4'>
                             <div className=''>
                                 <h3 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-lg font-semibold'>Enjoy</h3>
                                 <h1 className='text-[var(--brandWhite)] dark:text-[var(--brandWhite)] text-2xl
@@ -278,7 +278,7 @@ const Home = () => {
                             <p className='text-sm'>10 Jan to 28 Jan</p>
                         </div>
                         <div className=' h-full flex items-center'>
-                            <img src={img1} alt="hero" className='abosulte w-[250px] md:w-[340px] mx-auto object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] scale-125 ' />
+                            <img src={img1} alt="hero" className='absolute w-[250px] md:w-[340px] mx-auto object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] scale-110 md:scale-125 ' />
                         </div>
                         <div className='flex flex-col justify-center gap-4 p-8 sm:p-8 '>
                             <p className=' text-lg font-bold'>Air Solo Bass</p>
@@ -296,7 +296,7 @@ const Home = () => {
 
             <section className=" relative my-5 text-[var(--brandIcon)] mb-10 dark:text-[var(--brandWhite)]">
                 <div className='flex flex-col  justify-center items-center mb-4'>
-                    <h1 className='font-bold text-2xl'>Best Seller Product</h1>
+                    <h1 className='font-bold text-3xl sm:text-4xl'>Best Seller Product</h1>
                     <p className='text-sm'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div className='flex justify-center items-center'>
@@ -318,7 +318,7 @@ const Home = () => {
                                 {/*product info */}
                                 <div className='leading-7'>
                                     <h1 className='font-semibold text-lg'>{data.description}</h1>
-                                    <p className='bold text-sm'>${data.price}</p>
+                                    <p className='font-bold text-sm'>{data.price}</p>
                                 </div>
                             </div>
 
@@ -335,7 +335,7 @@ const Home = () => {
                         <div className='  p-6 sm:p-8 '>
                             <p className=' text-sm '>30% OFF</p>
                             <h1 className=' uppercase  text-4xl
-                                       lg:text-7xl  font-bold'>Fine Smile</h1>
+                                       lg:text-7xl  font-bold'>happy hours</h1>
                             <p className='text-sm'>10 Jan to 28 Jan</p>
                         </div>
                         <div className=' h-full flex items-center'>

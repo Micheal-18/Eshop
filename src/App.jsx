@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from './routes/Home'
 import Navbar from './components/Navbar'
 // import Footer from './components/Footer'
+import Blog from './routes/Blog'
 
 // Importing styles
 import './index.css'
@@ -16,8 +17,10 @@ const App = () => {
         <Route path="/" element={<>
         <Navbar />
           <Home />
+           <Blog />
           {/* <Footer /> */}
         </>} />
+       
       </Routes>
     </div>
   )

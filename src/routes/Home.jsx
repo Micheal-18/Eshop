@@ -153,7 +153,7 @@ const Home = () => {
                                 <button className='bg-[var(--brandWhite)] dark:bg-[var(--brandWhite)] text-[var(--brandIcon)] dark:text-[var(--brandBlack)] px-2 md:px-6 cursor-pointer py-2 rounded-full sm:ml-4 hover:bg-[var(--brandYellow)] dark:hover:bg-[var(--brandBlack)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Browser</button>
                             </div>
 
-                            <img src={img7} alt='secpic' className='w-[200px]  absolute lg:-right-4 left-5 top-10 lg:top-[40px]  object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]' />
+                            <img src={img7} alt='secpic' className='w-[200px]  absolute lg:-right-4 left-5 top-10 lg:top-[40px]  object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] hover:scale-105 duration-500' />
 
                         </div>
                     </div>
@@ -168,7 +168,7 @@ const Home = () => {
                                 <span className='bg-[var(--brandWhite)] dark:bg-[var(--brandWhite)] cursor-pointer  text-[var(--brandIcon)] dark:text-[var(--brandBlack)] px-2 md:px-6 py-2 rounded-full sm:ml-4 hover:bg-[var(--primary)] dark:hover:bg-[var(--brandIcon)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Browser</span>
                             </div>
                         </div>
-                        <img src={img9} alt="secpic" className="w-[200px] absolute -right-4 lg:top-[40px] sm:scale-100 lg:scale-110 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]" />
+                        <img src={img9} alt="secpic" className="w-[200px] absolute -right-4 lg:top-[40px] sm:scale-100 lg:scale-110 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] hover:scale-105 duration-500" />
                     </div>
                     <div className='flex items-end col-span-2 relative py-10 pl-5  h-[300px] bg-gradient-to-br from-red-600 to-red-600/90   rounded-3xl'>
                         <div className='mb-4'>
@@ -180,7 +180,7 @@ const Home = () => {
                                 <span className='bg-[var(--brandWhite)] dark:bg-[var(--brandWhite)] cursor-pointer  text-[var(--brandIcon)] dark:text-[var(--brandBlack)] px-2 md:px-6 py-2 rounded-full sm:ml-4 hover:bg-[var(--brandYellow)] dark:hover:bg-[var(--brandBlack)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Browser</span>
                             </div>
 
-                            <img src={img4} alt='secpic' className='w-[320px] absolute -right-4 top-1/2 -translate-y-1/2 sm:scale-100 lg:scale-110 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]' />
+                            <img src={img4} alt='secpic' className='w-[320px] absolute -right-4 top-1/2 -translate-y-1/2 sm:scale-100 lg:scale-110 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] hover:scale-105 duration-500' />
 
                         </div>
                     </div>
@@ -199,7 +199,7 @@ const Home = () => {
                                 <button className='bg-[var(--brandWhite)] dark:bg-[var(--brandWhite)] text-[var(--brandIcon)] dark:text-[var(--brandBlack)] px-2 md:px-6 cursor-pointer py-2 rounded-full sm:ml-4 hover:bg-[var(--brandYellow)] dark:hover:bg-[var(--brandBlack)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Browser</button>
                             </div>
 
-                            <img src={img6} alt='secpic' className='w-[300px] absolute -right-4 top-1/2 -translate-y-1/2 sm:scale-100 lg:scale-110 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]' />
+                            <img src={img6} alt='secpic' className='w-[300px] absolute -right-4 top-1/2 -translate-y-1/2 sm:scale-100 lg:scale-110 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] hover:scale-105 duration-500' />
 
                         </div>
                     </div>
@@ -213,7 +213,7 @@ const Home = () => {
                                 <span className='bg-[var(--brandWhite)] dark:bg-[var(--brandWhite)] text-[var(--brandIcon)] dark:text-[var(--brandBlack)] px-2 md:px-6 py-2 rounded-full  cursor-pointer  sm:ml-4 hover:bg-[var(--brandYellow)] dark:hover:bg-[var(--brandBlack)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Browser</span>
                             </div>
                             <div className='flex'>
-                                <img src={img8} alt='secpic' className='w-[200px] absolute bottom-2 right-0 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]' />
+                                <img src={img8} alt='secpic' className='w-[200px] absolute bottom-2 right-0 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] hover:scale-105 duration-500' />
                             </div>
                         </div>
                     </div>
@@ -228,7 +228,7 @@ const Home = () => {
                                 <span className='bg-[var(--brandWhite)] dark:bg-[var(--brandWhite)] text-[var(--brandIcon)] dark:text-[var(--brandBlack)] px-2 md:px-6 py-2 rounded-full  cursor-pointer  sm:ml-4 hover:bg-[var(--brandYellow)] dark:hover:bg-[var(--brandBlack)] hover:text-[var(--brandBlack)] dark:hover:text-[var(--brandWhite)] transition-all duration-300'>Browser</span>
                             </div>
 
-                            <img src={img5} alt='secpic' className='w-[200px] absolute bottom-0 right-0 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]' />
+                            <img src={img5} alt='secpic' className='w-[200px] absolute bottom-0 right-0 object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] hover:scale-105 duration-500' />
 
                         </div>
                     </div>

@@ -19,14 +19,14 @@ const Footer = () => {
             link: "/contact",
             text: "Contact"
         },
-        {
+        {git
             link: "/Blog",
             text: "Blog"
         }
     ]
 
     return (
-        <footer data-aos="fade-out" className="text-[var(--brandIcon)] mb-10 dark:text-[var(--brandWhite)] py-6">
+        <footer data-aos="fade-up" className="text-[var(--brandIcon)] mb-10 dark:text-[var(--brandWhite)] py-6">
             <div className="max-w-6xl mx-auto p-4">
                 <div className='grid sm:grid-cols-3 md:grid-cols-4 pb-20 pt-5'>
                     <div className='py-8 px-4'>

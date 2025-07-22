@@ -31,7 +31,7 @@ const Blog = () => {
 
   return (
               <section className=" relative my-12 text-[var(--brandIcon)] mb-10 dark:text-[var(--brandWhite)]">
-                    <div className='flex flex-col  justify-center items-center mb-4'>
+                    <div data-aos="fade-up" className='flex flex-col  justify-center items-center mb-4'>
                         <h1 className='font-bold text-2xl sm:text-4xl'>Recent News</h1>
                         <p className='text-sm'>Lorem ipsum elit.</p>
                     </div>
@@ -40,14 +40,14 @@ const Blog = () => {
                             {data.map((News) => (
                                 <div key={News.No} className='flex flex-col group'>
                                     {/*card*/}
-                                    <div className='overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300'>
+                                    <div data-aos="fade-out" className='overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300'>
                                         <img src={News.image} alt='data' className='object-cover h-[220px] w-full hover:scale-105 duration-500 rounded-2xl' />
                                     </div>
                                     {/*content info */}
                                     <div className='space-y-2'>
-                                        <p className='text-xs text-gray-500'>{News.published}</p>
-                                        <h1 className='font-bold line-clamp-1'>{News.title}</h1>
-                                        <p className='line-clamp-2 text-sm text-gray-600 dark:text-gray-400'>{News.description}</p>
+                                        <p data-aos="fade-up"  className='text-xs text-gray-500'>{News.published}</p>
+                                        <h1 data-aos="fade-up" className='font-bold line-clamp-1'>{News.title}</h1>
+                                        <p data-aos="fade-up" className='line-clamp-2 text-sm text-gray-600 dark:text-gray-400'>{News.description}</p>
                                     </div>
                                 </div>
     

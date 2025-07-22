@@ -15,7 +15,7 @@
 }
 
 html,
-body {
+body{
   margin: 0;
   padding: 0;
   font-family: "Outfit", sans-serif;
@@ -88,4 +88,23 @@ body {
 
 .animate {
   animation: bounce 0.5s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    scale: 0.1;
+  }
+
+  
+
+  100%{
+    opacity: 1;
+    scale: 1;
+    
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 2s ease-in-out ;
 }

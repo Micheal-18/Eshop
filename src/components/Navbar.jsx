@@ -1,17 +1,12 @@
 import React from 'react'
 import { FaCaretDown } from 'react-icons/fa'
-import { FiSearch } from 'react-icons/fi'
+import { FiSearch, FiX } from 'react-icons/fi'
 import { FaCartShopping } from 'react-icons/fa6'
 import Darkmode from './Darkmode'
 
-const Navbar = () => {
+const Navbar = ({handleCartClick, showCart, setShowCart}) => {
 
   const [click, setClick] = React.useState(false);
-  const [showCart, setShowCart] = React.useState(false);
-
-  const handleCartClick = () => {
-    setShowCart(!showCart);
-  }
 
   const handleClick = () => {
     setClick(!click);
@@ -51,9 +46,12 @@ const Navbar = () => {
             <div className='relative'>
               < FaCartShopping className='text-[var(--brandIcon)] dark:text-[var(--brandIcon)]  cursor-pointer transition ease-in-out duration-300  rounded-full hover:bg-[var(--brandWhite)] dark:hover:bg-[var(--brandWhite)]' onClick={handleCartClick} />
               <div className='w-4 h-4 bg-red-500 text-white rounded-full absolute -top-4 -right-3 flex items-center justify-center text-xs'>4</div>
-              {showCart && (<div className=''>
-                <div className='absolute  top-12 right-0 z-50  bg-[var(--brandWhite)] dark:bg-[var(--brandWhite)]  shadow-lg rounded-lg p-4 scale:110  w-64'>
-                <h2 className='text-lg font-semibold text-left text-[var(--primary)] mb-2'>Order Now</h2>
+              {showCart && (<div className='fixed inset-0 z-40 flex items-center justify-center bg-black/30 backdrop-blur-sm' >
+                <div className='absolute z-50  bg-[var(--brandWhite)] dark:bg-[var(--brandWhite)]  shadow-lg rounded-lg p-4 scale:110  w-64'>
+                <div className='flex justify-between'>
+                  <h2 className='text-lg font-semibold text-left text-[var(--primary)] mb-2'>Order Now</h2>
+                  <FiX  onClick={() => setShowCart(false)}/>
+                </div>
                 <form className='flex z-50 text-[var(--brandIcon)] dark:text-[var(--brandIcon)]  flex-col space-y-2'>
                   <input type="text" placeholder='Name' className='p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]' />
                   <input type="email" placeholder='Email' className='p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]' />

@@ -117,7 +117,7 @@ const Home = ({handleCartClick}) => {
     return (
         <>
             <section className='w-full relative flex flex-cols justify-center items-center'>
-                <div className='w-[95%] h-[70vh] md:h-[85vh] mt-16 bg-gradient-to-br from-gray-200 to-gray-300  dark:bg-gradient-to-br from-gray-200 to-gray-400   shadow-lg rounded-3xl'>
+                <div className='w-[95%] h-[60vh] md:h-[85vh] pt-6 md:pt-0 mt-16 bg-gradient-to-br from-gray-200 to-gray-300  dark:bg-gradient-to-br from-gray-200 to-gray-400   shadow-lg rounded-3xl'>
                     <Slider {...settings} className='w-full h-full rounded-4xl'>
                         {
                             HeroData.map((item) => (

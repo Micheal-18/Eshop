@@ -19,7 +19,7 @@ const Footer = () => {
             link: "/contact",
             text: "Contact"
         },
-        {git
+        {
             link: "/Blog",
             text: "Blog"
         }

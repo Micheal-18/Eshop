@@ -50,7 +50,7 @@ const Navbar = ({handleCartClick, showCart, setShowCart}) => {
                 <div className='absolute z-50  bg-[var(--brandWhite)] dark:bg-[var(--brandWhite)]  shadow-lg rounded-lg p-4 scale:110  w-64'>
                 <div className='flex justify-between'>
                   <h2 className='text-lg font-semibold text-left text-[var(--primary)] mb-2'>Order Now</h2>
-                  <FiX  onClick={() => setShowCart(false)}/>
+                  <FiX className='text-2xl text-[var(--brandIcon)] dark:text-[var(--brandWhite)]'  onClick={() => setShowCart(false)}/>
                 </div>
                 <form className='flex z-50 text-[var(--brandIcon)] dark:text-[var(--brandIcon)]  flex-col space-y-2'>
                   <input type="text" placeholder='Name' className='p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)]' />

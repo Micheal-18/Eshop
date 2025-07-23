@@ -101,8 +101,8 @@ const Home = ({handleCartClick}) => {
         }
     ]
     const settings = {
-        dots: true,
-        arrows: true,
+        dots: false,
+        arrows: false,
         infinite: true,
         speed: 400,
         slidesToScroll: 1,

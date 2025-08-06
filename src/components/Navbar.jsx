@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaCaretDown } from 'react-icons/fa'
+import { FaCaretDown, FaCaretUp } from 'react-icons/fa'
 import { FiSearch, FiX } from 'react-icons/fi'
 import { FaCartShopping } from 'react-icons/fa6'
 import Darkmode from './Darkmode'
@@ -7,7 +7,11 @@ import Darkmode from './Darkmode'
 const Navbar = ({handleCartClick, showCart, setShowCart}) => {
 
   const [click, setClick] = React.useState(false);
+  const [onMouseEnter, setOnMouseEnter] = React.useState(false);
 
+  const handleMouseEnter = () => {
+    setOnMouseEnter(true);
+  }
   const handleClick = () => {
     setClick(!click);
   }
@@ -23,8 +27,8 @@ const Navbar = ({handleCartClick, showCart, setShowCart}) => {
               <a href="/shop" >Shop</a>
               <a href="/about" >About</a>
               <a href="/blog" >Blog</a>
-              <li className=' list-none cursor-pointer outline-none  group'>
-                <a href='' className=' flex items-center justify-center'>Quick Link< FaCaretDown className='ml-2 animate' /></a>
+              <li className=' list-none cursor-pointer outline-none  group' onMouseEnter={handleMouseEnter} onMouseLeave={() => setOnMouseEnter(false)}>
+                <a href='' className=' flex items-center justify-center'>Quick Link{onMouseEnter ? < FaCaretUp className='ml-2 animate' /> : < FaCaretDown className="ml-2 animate"/>}</a>
 
                 <div className='fixed z-50 hidden group-hover:block w-[200px] rounded-md bg-[var(--brandWhite)]  dark:bg-[var(--brandWhite)] shadow-md dark:bg-gray-900 transition ease-in-out p-2 text-[var(--brandIcon)] text-[var(--brandIcon)]'>
                   <ul className='space-y-2'>
